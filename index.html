@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <style>
+        nav{
+            background-color: rgb(64, 58, 58);
+            color: white;
+            /* display: flex; */
+            font-size: 30px;
+            box-sizing: border-box;
+            
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0px 5rem;
+        }
+        li{
+            text-decoration: none;
+            padding: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>TicTacToe</li>
+            <!-- <li>Play for fun</li> -->
+            <li>By <b><i style="color: rgb(247, 213, 60);"> Suggi </i></b>Raj</li>
+        </ul>
+    </nav>
+
+    <div class="game_container">
+        <div class="container">
+            <div class="box bt-0 bl-0"><span class="box_text"></span></div>
+            <div class="box bt-0"><span class="box_text"></span></div>
+            <div class="box bt-0 br-0"><span class="box_text"></span></div>
+            <div class="box bl-0"><span class="box_text"></span></div>
+            <div class="box"><span class="box_text"></span></div>
+            <div class="box br-0"><span class="box_text"></span></div>
+            <div class="box bl-0 bb-0"><span class="box_text"></span></div>
+            <div class="box bb-0"><span class="box_text"></span></div>
+            <div class="box bb-0 br-0"><span class="box_text"></span></div>
+        </div>
+        <div class="game_information">
+            <h1 style="font-size: 1.69rem;" class="heading">Welcome to tic tac toe</h1>
+            <div class="turn_reset">
+                <span class="turn">Turn for X</span>
+                <span class="info">
+                    <button id="reset">Reset</button>
+                </span>
+            </div>
+            <div class="imgbox">
+                <video src="excited.gif.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
